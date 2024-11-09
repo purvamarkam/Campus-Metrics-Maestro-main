@@ -1,0 +1,16 @@
+.report-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    background: linear-gradient(135deg, #bf83f8, #7527ac);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .report-background {
+        height: calc(100vh - 56px);
+        padding: 20px;
+    }
+}

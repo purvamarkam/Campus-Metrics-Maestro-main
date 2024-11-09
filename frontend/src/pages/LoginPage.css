@@ -1,0 +1,111 @@
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #bf83f8, #610c9d);
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.6), inset 5px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: moveBubble 25s infinite ease-in-out;
+    opacity: 0.8;
+}
+
+.bubble:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    animation-duration: 20s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 20%;
+    animation-duration: 22s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    left: 40%;
+    animation-duration: 24s;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+    width: 120px;
+    height: 120px;
+    left: 60%;
+    animation-duration: 18s;
+    animation-delay: 6s;
+}
+
+.bubble:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    left: 70%;
+    animation-duration: 26s;
+    animation-delay: 8s;
+}
+
+@keyframes moveBubble {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-50vh) translateX(10vw) scale(1.2);
+    }
+    100% {
+        transform: translateY(-100vh) translateX(-20vw) scale(1);
+    }
+}
+
+.login-box {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .login-box {
+        padding: 20px;
+        max-width: 90%; 
+    }
+
+    .bubble {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .bubble:nth-child(4) {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bubble:nth-child(1) {
+        width: 80px;
+        height: 80px;
+    }
+
+    .bubble:nth-child(2) {
+        width: 50px;
+        height: 50px;
+    }
+}

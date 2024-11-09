@@ -1,0 +1,24 @@
+.add-event-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #8A2BE2, #4B0082); 
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.add-event-box {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 90%;
+    max-width: 500px; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    margin: 0 auto; 
+}
